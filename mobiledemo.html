@@ -1,0 +1,182 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LostCity_s_BookSelf</title>
+	 <style>
+
+        .bookself_preview {
+            background-image: url("./images/icons/bg1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: fixed;
+            top:0px;
+            left: 0px;
+            bottom:0px;
+            right:0px;
+        }
+
+        .bookself_phone {
+            background-image: url("./images/icons/iphone6_bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+            height: 721px;
+            width: 345px;
+           /* width: 511;
+            height: 731;*/
+            float: left;
+            position: relative;
+
+        }
+
+        .bookself_phone_header{
+            background: url("./images/icons/phone_header.png") no-repeat scroll 0 0;
+            height: 42px;
+            width: 322px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .bookself_phone_top {
+            position: absolute;
+            background: url(./images/icons/phonetop2.gif) no-repeat scroll 0 0;
+            height: 20px;
+            width: 322px;
+            top: 43px;
+            left: 0px;
+        }
+
+        .iframe{
+            height: 533px;
+            left: 0px;
+            top: 63px;
+            width: 322px;
+            background-color: #fff;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .iframe iframe{
+            height: 533px;
+            left: 1px;
+            position: absolute;
+            top: 0;
+            width: 320px;
+        }
+
+        .bookself_phone_footer {
+            background: url("./images/icons/phone_footer.png") no-repeat scroll 0 0;
+            height: 47px;
+            width: 322px;
+            position: absolute;
+            top: 596px;
+            left: 0px;
+        }
+
+        .bookself_phone_wrap {
+            width: 750px;
+            height: 721px;
+            margin: 10px auto 0;
+        }
+        
+        .qrcode_wrap {
+            text-align: center;
+            border-radius: 5px;
+            float: left;
+            margin-left: 150px;
+            margin-top: 100px;
+            width: 248px;
+        }
+
+        .qrcode_img > img {
+        	border: 10px solid #fff;
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+            border: 0;
+            border-radius: 5px;
+            width: 200px;
+            margin:0 auto;
+        }
+
+        .activity_info {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: #fff;
+        }
+        .activity_ll {
+            float: left;
+            width: 248px;
+            margin-bottom: 50px;
+        }
+        .activity_ll h3 {
+            color: #fff;
+            font-size: 15px;
+            line-height: 25px;
+            margin: 10px 0 0;
+            text-align: center;
+        }
+        .copy1 {
+            text-align: center;
+        }
+
+        .copy1 > a {
+            color: yellow;
+        }
+
+        /*reset*/
+        .bookself_phone_header {
+
+        }
+    </style>
+</head>
+<body class="">
+    <div class="bookself_preview">
+        <div class="bookself_phone_wrap">
+            <div class="bookself_phone">
+                <div class="bookself_phone_header"></div>
+                <div class="bookself_phone_top"></div>
+                <div class="iframe">
+                    <!--http://wx7a1069e154e14269.wx.mvote.net/wxvote/539523e9-d61f-0770-428a-4d2677a541e6.html?jumpnoweixin=0-->
+                    <iframe id="ifr" src="http://2k8v323213.wicp.vip"  border="0" frameborder="0"></iframe>
+                </div>
+                <div class="bookself_phone_footer"></div>
+            </div>
+            <div class="qrcode_wrap">
+                <div class="qrcode_img" id="qrcode">
+                    <!--<img src="/images/icons/qr.png" alt="">-->
+                </div>
+                <div class="activity_info" id="activity_info">
+                    <!--<p>开始时间：2017-06-07 10:00:00</p>-->
+                    <!--<p>结束时间：2017-06-07 10:00:00</p>-->
+                </div>
+                <div class="activity_ll">
+                    <h3>使用手机扫码，在浏览器或在微信浏览吧 ：））</h3>
+                </div>
+                <div class="copy1">
+
+                    <a href="" target="_blank">更多关于我</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="./index.min.js"></script>
+    <script type="text/javascript" src="../../js/qrcode.min.js"></script>
+    <script type="text/javascript">
+		var qrcode = new QRCode(document.getElementById("qrcode"), {
+					text:"http://2k8v323213.wicp.vip",
+					width: 128,
+					height: 128,
+					colorDark : "#000000",
+					colorLight : "#ffffff",
+					correctLevel : QRCode.CorrectLevel.H
+				})
+		qrcode._el.children[1].style["border"] = "10px solid #fff"
+    </script>
+</body>
+</html>
+
+   
+
+
